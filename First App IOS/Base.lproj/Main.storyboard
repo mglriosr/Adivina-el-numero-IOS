@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_0" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="First_App_IOS" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" multipleTouchEnabled="YES" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Adivina el número" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0NE-4B-ahv">
+                                <rect key="frame" x="92" y="30" width="136" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="0NE-4B-ahv" secondAttribute="height" multiplier="136:21" id="6M9-WH-vHC"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="F50-rP-3gP">
+                                <rect key="frame" x="10" y="71" width="300" height="31"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="F50-rP-3gP" secondAttribute="height" multiplier="289:30" id="uQf-Fa-hdm"/>
+                                </constraints>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Intentos" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JBX-zg-XAu">
+                                <rect key="frame" x="128.5" y="122" width="63" height="31.5"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="JBX-zg-XAu" secondAttribute="height" multiplier="2:1" id="69f-Bw-n0A"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Intentos" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="K19-vv-sXl">
+                                <rect key="frame" x="128.5" y="173.5" width="63" height="31.5"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="K19-vv-sXl" secondAttribute="height" multiplier="2:1" id="hXb-9y-p9x"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Añade intentos del 1 al 9" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="M6g-Lt-dz4">
+                                <rect key="frame" x="66.5" y="225" width="187" height="93.5"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="M6g-Lt-dz4" secondAttribute="height" multiplier="2:1" id="NrA-b8-HYP"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oEr-Eu-1vg">
+                                <rect key="frame" x="136.5" y="338.5" width="47" height="31"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="oEr-Eu-1vg" secondAttribute="height" multiplier="23:15" id="coH-ZH-Jq3"/>
+                                </constraints>
+                                <state key="normal" title="Validar"/>
+                                <connections>
+                                    <action selector="validarbtn:" destination="BYZ-38-t0r" eventType="touchUpInside" id="eaX-Yq-2Ow"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="0NE-4B-ahv" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="2Mq-UX-3yf"/>
+                            <constraint firstItem="K19-vv-sXl" firstAttribute="top" secondItem="JBX-zg-XAu" secondAttribute="bottom" constant="20" id="9RP-u4-7Kx"/>
+                            <constraint firstItem="F50-rP-3gP" firstAttribute="top" secondItem="0NE-4B-ahv" secondAttribute="bottom" constant="20" id="DjH-0R-1IZ"/>
+                            <constraint firstItem="M6g-Lt-dz4" firstAttribute="top" secondItem="K19-vv-sXl" secondAttribute="bottom" constant="20" id="HTL-3U-pa5"/>
+                            <constraint firstItem="0NE-4B-ahv" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="10" id="UWg-tI-ha9"/>
+                            <constraint firstItem="0NE-4B-ahv" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="YMp-o8-yRs"/>
+                            <constraint firstItem="oEr-Eu-1vg" firstAttribute="top" secondItem="M6g-Lt-dz4" secondAttribute="bottom" constant="20" id="bv0-Dj-8eM"/>
+                            <constraint firstItem="oEr-Eu-1vg" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="dWa-qe-2Gd"/>
+                            <constraint firstItem="K19-vv-sXl" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="drJ-6K-tMl"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="F50-rP-3gP" secondAttribute="trailing" constant="10" id="f0U-LP-g7d"/>
+                            <constraint firstItem="JBX-zg-XAu" firstAttribute="top" secondItem="F50-rP-3gP" secondAttribute="bottom" constant="20" id="hZb-3a-coM"/>
+                            <constraint firstItem="F50-rP-3gP" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="j1y-qc-g2b"/>
+                            <constraint firstItem="JBX-zg-XAu" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="sMi-Br-bLY"/>
+                            <constraint firstItem="M6g-Lt-dz4" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="u1j-0c-Lz7"/>
+                            <constraint firstItem="F50-rP-3gP" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="10" id="zFI-vj-wgF"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="intentoslbl" destination="JBX-zg-XAu" id="XbU-pQ-CdU"/>
+                        <outlet property="numtxt" destination="F50-rP-3gP" id="Wgz-Ig-HP1"/>
+                        <outlet property="smslbl" destination="M6g-Lt-dz4" id="uGX-h9-fC1"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="133.125" y="132.04225352112675"/>
+        </scene>
+    </scenes>
+</document>
